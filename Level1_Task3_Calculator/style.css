@@ -1,0 +1,120 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: rgb(62, 143, 197);
+}
+#container {
+  width: 1000px;
+  height: 550px;
+  background-image: linear-gradient(
+    rgb(246, 246, 246),
+    rgba(226, 120, 120, 0.3)
+  );
+  margin: 20px auto;
+}
+#calculator {
+  width: 320px;
+  height: 520px;
+  background-color: black;
+  margin: 0 auto;
+  top: 20px;
+  position: relative;
+  border-radius: 50px 0 50px 0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#result {
+  height: 120px;
+  color: white;
+}
+#history {
+  text-align: right;
+  height: 20px;
+  margin: 0 20px;
+  padding-top: 20px;
+  font-size: 15px;
+  color: white;
+}
+#output {
+  text-align: right;
+  height: 80px;
+  margin: 10px 20px;
+  font-size: 30px;
+}
+#keyboard {
+  height: 400px;
+}
+.operator,
+.number,
+.empty {
+  width: 50px;
+  height: 50px;
+  margin: 15px;
+  float: left;
+  border-radius: 50%;
+  border-width: 0;
+  font-weight: bold;
+  font-size: 15px;
+}
+.number {
+  background-color: #36424a;
+  color: white;
+}
+.number,
+.operator {
+  cursor: pointer;
+}
+.operator:active,
+.number:active {
+  font-size: 13px;
+}
+.operator:focus,
+.number:focus,
+.empty:focus {
+  outline: 0;
+}
+button:nth-child(1) {
+  font-size: 20px;
+  background-color: #86a0a9d7;
+}
+button:nth-child(2) {
+  font-size: 20px;
+  background-color: #86a0a9d7;
+}
+button:nth-child(3) {
+  font-size: 20px;
+  background-color: #86a0a9d7;
+}
+button:nth-child(4) {
+  font-size: 20px;
+  background-color: #ffa500;
+}
+button:nth-child(8) {
+  font-size: 20px;
+  background-color: #ffa500;
+}
+button:nth-child(12) {
+  font-size: 20px;
+  background-color: #ffa500;
+}
+button:nth-child(16) {
+  font-size: 20px;
+  background-color: #ffa500;
+}
+button:nth-child(20) {
+  font-size: 20px;
+  background-color: #ffa500;
+}
+
+#projectname {
+  padding: 10px;
+  position: relative;
+  margin-top: 50px;
+  height: 80px;
+  width: 300px;
+  text-align: center;
+  background-color: rgb(239, 151, 151);
+  border-radius: 0px 50px 0px 50px;
+}
+
+#credit {
+  font-size: 14px;
+}

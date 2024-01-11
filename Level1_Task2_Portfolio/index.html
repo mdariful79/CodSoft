@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- For icons in Website -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- For title of the Website -->
+    <title>Ariful's Portfolio</title>
+
+    <!-- For CSS Connection -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- For logo in Website -->
+    <link rel="icon" href="image/Brand.jpg" type="image/x-icon">
+    <!-- <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script> -->
+
+    <!-- For typed in Javascript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.16/typed.umd.js" integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<body>
+    
+<!-- Home portion -->
+    <div class="header">
+        <div class="container">
+            <nav>
+                <a href="#Home" class="logo">
+                    <img style="width: 274px; height: 140px" src="images/logo2.gif" alt="" />
+                  </a>
+                <ul id="sidemenu">
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Key-Skills">Skills</a></li>
+                <li><a href="#Portfolio">Portfolio</a></li>
+                <li><a href="#Contact">Contact</a></li>
+                <li><a href="#Contact">Hire Me</a></li>
+
+                <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-table" id="Home">
+               <div class="table">
+                    <div class="tr">
+                       <div class="td-left">
+                            <h3>Hi, It's me</h3>
+                            <h1><span class="h"><b>Ariful</b></span><b> Islam</b></h1>
+                            <h3>And, I'm ..<br><span class="writing"></span></h3>
+                            <!-- <div>
+                                <a href="resume.pdf" download class="btn btn1">Download CV</a>
+                            </div> -->
+                       </div>
+                        <div class="td-right"><img src="/images/arif_formal.png" alt="not available" class="image"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- About ME portion -->
+    <div class="about" id="About">
+        <div class="container">
+            <div class="row">
+                <div class="column1">
+                    <img src="/images/Arif.JPG" alt="not available" class="column1">
+                </div>
+                <div class="column2">
+                    <h1 class="heading">About <span class="Me">Me</span></h1>
+                    <p>I am a passionate and self-motivated individual with a strong background in programming, particularly in C++.
+                         I have honed my skills by solving over 800 problems on various online judges like Codeforces, LeetCode, UVA, and AtCoder.
+                         Additionally, I have learned JavaScript and React and have completed several projects using these technologies.</p>
+                    <div class="important">
+                        <p class="about_me_nav current" onclick="openthis('skills')">Skills</p>
+                        <p class="about_me_nav" onclick="openthis('internships')">Internships & Trainings</p>
+                        <p class="about_me_nav" onclick="openthis('education')">Education</p>
+                    </div>
+                    <div class="about_me_detail my" id="skills">
+                        <ul>
+                            <li><span>Web-Development</span><br>I am a full stack Mern developer. Using HTML, CSS, JavaScript, NodeJs, Express Js, MongoBD i develop dynamic & static websites.</li>
+                            <li><span>Competitive Programming</span><br>Building programs in Efficient Manner with the help of the DSA. I have solved more than 800 problems in different virtual online judge. Such as LeetCode, Codeforces, AtCoder, UVA & so on.</li>
+                            <li><span>Data Structure and Algorithm</span><br>For making the effective codes with advance level of Coding technique and maintain the time-complexity as well as space-complexity</li>
+                        </ul>
+                    </div>
+                    <div class="about_me_detail" id="internships">
+                        <ul>
+                            <li><span><a href="https://www.linkedin.com/company/codsoft/", style="color: #f5779f">CodSoft</a></span><br>In this Internship program, I create a Dynamic as well as Static Website like Portfolio, Landing Page, Calculator, Tribute Page, Air Travelling Booking Website, Blog Website.</li>
+                            <li><span>Mentorship Program-2023</span><br>I Worked on Full Stack Mern projects under the supervision of<br>
+                               <strong><a href="https://www.linkedin.com/in/md4r1fh41d3r/",  style="color: #39ff14">Md. Arif Haider</a></strong> (Senior Software Engineer, Binate Solutions Ltd.) </li>
+                            <li><span>Industrial Training-2023</span><br>I Worked on a Full stack web development program with HTML,CSS, NodeJs, PostgreSQL.<br>
+                                Under the supervision of <strong><a href="https://www.linkedin.com/in/abirbinayubkhan/",  style="color: #39ff14">Abir Bin Ayub Khan</a></strong> (Senior Software Engineer, Liberate Labs Bangladesh) </li>
+                            <li><span><a href="https://www.stamasoft.com/",  style="color: #f5779f">Stamasoft Technologies</a></span><br>
+                                <strong>Android App Developer (Intern)</strong><br>
+                                I worked on Android app development using Java & kotlin form June 2021 - June 2022</li> 
+                        </ul>
+                    </div>
+                    <div class="about_me_detail" id="education">
+                        <ul>
+                            <li><span>BSc. Computer Science & Engineering</span><br><strong>International Islamic University Chittagong (IIUC)</strong><br>
+                                Session: <span>2019-2024</span><br>CGPA: <span>3.51/4.00</span></li>
+                            <li><span>Higher Secondary Certificate (HSC)</span><br><strong>Cox's Bazar Govt. College</strong><br>Year of Completion: <span>2018</span><br>CGPA: <span>4.25/5.00</span>
+                            </li>
+                            <li><span>Secondary School Certificate (SSC)</span><br><strong>Cox's Bazar Govt. High School</strong><br>Year of Completion: <span>2015</span><br>CGPA: <span>5.00/5.00</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- Key-Skills portion -->
+    <div class="Key-Skills" id="Key-Skills">
+        <div class="myskills">
+            <h1 class="title"><span class="Me">My Skills</span></h1>
+            <div class="skills">
+                <div class="column left">
+                    <div class="text">My creative skills & experiences</div>
+                    <p>Hi, I'm Md. Ariful Islam from Cox's Bazar, Bangladesh. <br>As a CSE fresh graduate, I have gained many skills and some experience in Techical field.
+                        <br> I'm a self motivated problem solver and tech enthusiast. Drawing upon my creative skills and experiences, I bring a unique perspective to every project.<br> Currently, I am looking to join the workshop to gain real-world experience.
+                         Ability to complete tasks on time Optimzed website performance by using web development tools and techniques like caching, minification, and concatenation.<br>
+                    On the right hand side bars shows my graph and ability in different fields/languages.<br>My portfolio reflects a diverse range of creative skills and experiences.</p>
+                    <a href="#" class="readme">Read more</a>
+                </div>
+                <div class="column right">
+                    <div class="bars">
+                        <div class="information">
+                            <span>C/C++</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="line c"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="information">
+                            <span>HTML/CSS</span>
+                            <span>90%</span>
+                        </div>
+                         <div class="line python"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="information">
+                            <span>JavaScript</span>
+                            <span>75%</span>
+                        </div>
+                         <div class="line html"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="information">
+                            <span>NodeJs</span>
+                            <span>70%</span>
+                        </div>
+                         <div class="line js"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="information">
+                            <span>MongoDB</span>
+                            <span>60%</span>
+                        </div>
+                         <div class="line php"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="information">
+                            <span>DSA</span>
+                            <span>70%</span>
+                        </div>
+                         <div class="line dsa"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="information">
+                            <span>MySql</span>
+                            <span>70%</span>
+                        </div>
+                         <div class="line sql"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="information">
+                            <span>OS</span>
+                            <span>80%</span>
+                        </div>
+                         <div class="line os"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="information">
+                            <span>Software Engineering</span>
+                            <span>90%</span>
+                        </div>
+                         <div class="line se"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="information">
+                            <span>Python</span>
+                            <span>70%</span>
+                        </div>
+                         <div class="line dbms"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="information">
+                            <span>OOPs</span>
+                            <span>80%</span>
+                        </div>
+                         <div class="line oops"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- Potfolio Portion -->
+    <div class="Portfolio" id="Portfolio">
+        <div class="container">
+            <h1 class="title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/baysquare.JPG" alt="Not Available">
+                    <div class="layer">
+                        <h3>BaySquare Hotel Website</h3>
+                        <p>It's a responsive website of Hotel Bay Square, that helps the customer easily reach us and find all details about our hotel.
+                            <br>From this our customer can know about our recent update, offers & deals.</p>
+                        <a href="https://github.com/mdariful79/Task1_Landing_Page/BaySquareHotelManagement"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="/images/calculator.JPG" alt="Not Available">
+                    <div class="layer">
+                        <h3>Iphone Calculator</h3>
+                        <p>It is a responsive clone of Iphone calculator that works properly.<br>
+                            Which do work easily and it contains the addition button, subtraction button, multiplication button, and division button, all clear buttons are also available, and deleting a single string is also available which works properly without giving any error.</p>
+                        <a href="https://github.com/mdariful79/Task3_calculator"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="/images/portfolio.JPG" alt="Not Available">
+                    <div class="layer">
+                        <h3>Portfolio Website</h3>
+                        <p>It's a responsive Portfolio of myself.<br>From this anyone can reach me out easily and can also hire me. He/She can know about my details and also download my CV.</p>
+                        <a href="https://github.com/mdariful79/Task2_Portfolio"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+
+
+<!-- Contact Me Portion-->
+    <div class="Contact" id="Contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="title1">Contact <span class="Me">Me</span></h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> mdariful057@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> +8801521-219552</p>
+                    <div class="social-media">
+                        <a href="https://www.linkedin.com/in/ariful79/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/mdariful79"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://twitter.com/nullbrain79"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.facebook.com/ariful79official/"><i class="fa-brands fa-facebook"></i></a>
+                    </div>
+                    <a href="resume.pdf" download class="btn btn1">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name = "submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn1">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div> 
+    <!-- Footer design -->
+    <div class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2024 by Md. Ariful Islam | All Rights Received</p>
+        </div>
+        <div class="footer-iconTop">
+            <a href="#Home" class="uplogo">
+                <img src="images/uplogo2.gif" alt="uplogo footer" />
+              </a>
+        </div>       
+    </div>
+    
+
+    
+
+<!-- Javascript Connection  -->
+    <script type="text/Javascript" src="Portfolio.js"></script>
+</body>
+</html>
