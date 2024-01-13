@@ -32,3 +32,5 @@ var typed = new Typed(".writing",{
     loop:true
 });
 
+
+

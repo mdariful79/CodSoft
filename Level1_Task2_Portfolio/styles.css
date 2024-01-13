@@ -206,7 +206,8 @@ nav ul li a:hover::after{
 }
 
 /* ------------ My Skills ------------- */
-.skills{
+
+.skillss{
 display:flex;
 justify-content: space-between;
 flex-wrap: wrap;
@@ -219,10 +220,10 @@ padding: 40px 80px;
 .right{
     flex-basis: 50%;
 }
-.skills .left p{
+.skillss .left p{
     text-align: justify;
 }
-.skills .left a{
+.skillss .left a{
     text-decoration: none;
     display: inline-block;
     background: #ff004f;
@@ -235,7 +236,7 @@ padding: 40px 80px;
     border :2px solid #ff004f;
     transition: all 0.3s ease;
 }
-.skills .left a:hover{
+.skillss .left a:hover{
     color:#ff004f;
     background: none;    
 }
@@ -243,96 +244,73 @@ padding: 40px 80px;
     justify-content: center;
     display: flex;
     font-weight: 700;
-
 }
+
 .Key-Skills .title::after{
     content: '';
 }
-.Key-Skills .skills .column{
+.Key-Skills .skillss .column{
     width: calc(50% - 30px);
 }
-.Key-Skills .skills .left .text{
+.Key-Skills .skillss .left .text{
     font-size: 28px;
     font-weight: 600;
     margin-bottom: 10px;
 }
-.Key-Skills .skills .left p{
+.Key-Skills .skillss .left p{
     font-size: 20px;
     margin-bottom: 10px;
 }
-.Key-Skills .skills .right .bars{
-    margin-bottom: 15px;
+
+.Key-Skills .skillss .right .text2 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-align: center;
 }
-.Key-Skills .skills .right .bars .information{
+
+
+.skills {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.skill-card {
+    width: 120px;
+    height: 120px;
+    background-color: #12d87f;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    transition: transform 0.3s ease;
 }
-.Key-Skills .skills .right .bars span{
-    font-weight: 500;
-    font-size: 18px;
+
+.skill-card:hover {
+    transform: scale(1.3);
 }
-.Key-Skills .skills .right .line{
-    height: 5px;
-    width:100%;
-    background: #526D82;
-    position: relative;
-    border-radius: 2px;
-    transition: all 0.4s ease-in-out;
+
+.skill-card i {
+    font-size: 30px;
+    margin-bottom: 10px;
 }
-.Key-Skills .skills .right .line::before{
-   content: '';
-   position: absolute;
-   height: 100%;
-   /* width: 80%; */
-   left: 0;
-   top: 0;
-   background:#f5779f;
+
+.skill-card p {
+    font-size: 12px;
+    margin: 0;
 }
-.skills .right .c::before{
-    width: 80%;
-    border-radius: 2px;
+
+.skill-description {
+    color: #757575;
 }
-.skills .right .python::before{
-    width: 60%;
-    border-radius: 2px;
-}
-.skills .right .html::before{
-    width: 80%;
-    border-radius: 2px;
-}
-.skills .right .js::before{
-    width: 55%;
-    border-radius: 2px;
-}
-.skills .right .php::before{
-    width: 50%;
-    border-radius: 2px;
-}
-.skills .right .dsa::before{
-    width: 60%;
-    border-radius: 2px;
-}
-.skills .right .sql::before{
-    width: 90%;
-    border-radius: 2px;
-}
-.skills .right .os::before{
-    width: 70%;
-    border-radius: 2px;
-}
-.skills .right .se::before{
-    width: 90%;
-    border-radius: 2px;
-}
-.skills .right .dbms::before{
-    width: 70%;
-    border-radius: 2px;
-}
-.skills .right .oops::before{
-    width: 80%;
-    border-radius: 2px;
-}
+
+
 
 /* ----------- Portfolio ----------- */
 .container .title{
@@ -341,7 +319,7 @@ padding: 40px 80px;
     margin-top: 12px;
     padding-top: 10px;
     font-weight: 700;
-    color: #ff004f;
+    
 }
 .work-list{
     display: grid;
