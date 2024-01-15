@@ -25,7 +25,7 @@ function closemenu(){
 
 // ---------------- For writting the different words in Home section --------------
 var typed = new Typed(".writing",{
-    strings:["Full Stack Developer 💻", "Mern Stack Dev 📱","Competitive Programmer 👩🏻‍💻", "Cross Platform Dev 🛑", "React/React Native 🌐"],
+    strings:["Full Stack Developer 💻", "Mern Stack Dev 📱","Competitive Programmer 👨‍💻", "Cross Platform Dev 🛑", "React/React Native 🌐"],
     typeSpeed:100,
     backSpeed:100,
     backDelay:1000,
